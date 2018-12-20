@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite_TestMethods"  >
+    <test name="testCase1">
+        <classes>
+            <class name="com.xnn.groupsTest.TestConfig"/>
+            <class name="com.xnn.dao.UserInfoMapperTest">
+                <methods>
+                    <include name="testInsertUser"/>
+                    <include name="testSelectByPrimaryKey"/>
+                    <exclude name="testUpdateByPrimaryKey"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="testCase2">
+        <classes>
+            <class name="com.xnn.groupsTest.TestConfig"/>
+            <class name="com.xnn.groupsTest.DatabaseTest"/>
+        </classes>
+    </test>
+
+</suite>

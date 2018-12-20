@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestDependency" >
+    <test name="testCase">
+       <classes>
+           <class name="com.xnn.dependencyTest.AppTest"/>
+           <class name="com.xnn.dependencyTest.DataBaseTest"/>
+           <class name="com.xnn.dependencyTest.ServerTest"/>
+       </classes>
+    </test>
+</suite>

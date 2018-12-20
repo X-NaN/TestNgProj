@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite_TestAll" parallel="true" thread-count="2" >
+    <test name="testCase1">
+        <classes>
+            <class name="com.xnn.calculate.CalculateTest"/>
+            <class name="com.xnn.AnnotationTest"/>
+        </classes>
+    </test>
+
+</suite>

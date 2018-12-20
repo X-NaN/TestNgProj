@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite_TestGroups" >
+    <test name="testDataBase">
+        <!-- 指定包名称而不是类名称-->
+       <groups>
+           <run>
+               <exclude name="db_nosql"/>
+               <include name="db"/>
+           </run>
+       </groups>
+        <classes>
+            <class name="com.xnn.groupsTest.DatabaseTest"/>
+        </classes>
+    </test>
+</suite>

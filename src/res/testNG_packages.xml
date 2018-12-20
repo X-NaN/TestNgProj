@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite_TestPackages" >
+    <test name="testCalculate">
+        <!-- 指定包名称而不是类名称-->
+        <packages>
+            <package name="com.xnn.calculate"/>
+        </packages>
+    </test>
+</suite>
