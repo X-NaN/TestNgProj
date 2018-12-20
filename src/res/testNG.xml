@@ -4,7 +4,9 @@
     <test name="testCase1">
         <classes>
             <class name="com.xnn.calculate.CalculateTest"/>
+            <!--
             <class name="com.xnn.AnnotationTest"/>
+            -->
         </classes>
     </test>
 

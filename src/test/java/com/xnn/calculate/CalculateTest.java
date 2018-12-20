@@ -54,7 +54,7 @@ public class CalculateTest {
      * 测试冒泡排序
      * @throws Exception
      */
-    @Test(timeOut = 2000)
+    @Test(timeOut = 2000,enabled = false)
     public void testSort() throws Exception {
         int[] arr = new int[50000]; //数组长度为50000
         int arrLength = arr.length;
@@ -71,7 +71,7 @@ public class CalculateTest {
      * 测试快速排序
      * @throws Exception
      */
-    @Test(timeOut = 2000)
+    @Test(timeOut = 2000,enabled = false)
     public void testQuickSort()throws Exception{
         int[] arr = new int[50000]; //数组长度为50000
         int arrLength = arr.length;
