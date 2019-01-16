@@ -29,7 +29,7 @@ public class SeTest {
      */
     @DataProvider(name = "loginData")
     public Object[][] provideData(){
-        return new Object[][] { { "1186711035", "xnn12230118" }};
+        return new Object[][] { { "1186711035", "*" }};//qq号和密码
     }
 
     @Test(dataProvider = "loginData")
