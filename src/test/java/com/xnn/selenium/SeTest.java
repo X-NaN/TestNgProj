@@ -48,6 +48,7 @@ public class SeTest {
         //打开qq email首页
         driver.get("https://mail.qq.com/");
         //driver.get("https://xui.ptlogin2.qq.com/cgi-bin/xlogin?target=self&appid=522005705&daid=4&s_url=https://mail.qq.com/cgi-bin/readtemplate?check=false%26t=loginpage_new_jump%26vt=passport%26vm=wpt%26ft=loginpage%26target=&style=25&low_login=1&proxy_url=https://mail.qq.com/proxy.html&need_qr=0&hide_border=1&border_radius=0&self_regurl=http://zc.qq.com/chs/index.html?type=1&app_id=11005?t=regist&pt_feedback_link=http://support.qq.com/discuss/350_1.shtml&css=https://res.mail.qq.com/zh_CN/htmledition/style/ptlogin_input24e6b9.css");
+        //获取页面标题
         String title=driver.getTitle();
         System.out.println("title=>"+title);
         //qq号输入框和密码输入框在iframe中
@@ -59,12 +60,14 @@ public class SeTest {
         //点击"登录"按钮
         driver.findElement(By.id("login_button")).click();
 
-        //页面跳转需要时间
+        //元素及其值加载出来需要时间
+
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
 
         String useraddr="1186711035@qq.com";
         WebElement addr= driver.findElement(By.id("useraddr"));
