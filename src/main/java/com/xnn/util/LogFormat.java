@@ -29,12 +29,20 @@ public class LogFormat {
                     log = new TestCaseLog(LogLevel.TestCase.getId(), LogLevel.TestCase.getName(), line.replace("<TestCase>","").trim());
                 }else if(line.contains("<Step>")){
                     log = new TestCaseLog(LogLevel.Step.getId(), LogLevel.Step.getName(), line.replace("<Step>","").trim());
+                }else if(line.contains("<Info>")){
+                    log = new TestCaseLog(LogLevel.Info.getId(), LogLevel.Info.getName(), line.replace("<Info>","").trim());
+                }else if(line.contains("<Success>")){
+                    log = new TestCaseLog(LogLevel.Success.getId(), LogLevel.Success.getName(), line.replace("<Success>","").trim());
+                }else if(line.contains("<Warn>")){
+                    log = new TestCaseLog(LogLevel.Warn.getId(), LogLevel.Warn.getName(), line.replace("<Warn>","").trim());
+                }else if(line.contains("<Error>")){
+                    log = new TestCaseLog(LogLevel.Error.getId(), LogLevel.Error.getName(), line.replace("<Error>","").trim());
                 }
                 if (log!=null){
                     logList.add(log);
                 }
-
             }
+            String s="";
         } catch (IOException e) {
             e.printStackTrace();
         }
