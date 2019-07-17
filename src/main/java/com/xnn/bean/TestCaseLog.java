@@ -1,6 +1,7 @@
 package com.xnn.bean;
 
 public class TestCaseLog {
+
     int logLevel;
     String logName;
     String logContent;
