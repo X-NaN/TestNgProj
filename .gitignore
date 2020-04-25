@@ -33,3 +33,6 @@ hs_err_pid*
 #过滤AppData中的文件
 /AppData
 *.csv
+
+.DS_Store
+src/.DS_Store
