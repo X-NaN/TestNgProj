@@ -1,7 +1,8 @@
 # 0 TestNgProj
 
-testng测试框架学习实例 官网：https://testng.org/doc/download.html
-maven库：https://mvnrepository.com/
+testng测试框架学习实例 
+* 官网：https://testng.org/doc/download.html
+* maven库：https://mvnrepository.com/
 
 # 1 idea运行testng
 
