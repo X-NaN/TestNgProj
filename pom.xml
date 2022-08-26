@@ -7,6 +7,11 @@
     <groupId>TestNGProj</groupId>
     <artifactId>TestNGProj</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+       <project.testOutputDirectory>com.xnn</project.testOutputDirectory>
+    </properties>
+
+
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -63,6 +68,7 @@
                 <configuration>
                     <!--<testFailureIgnore>true</testFailureIgnore>-->
                     <configName>我是配置</configName>
+                    <testCaseDir>${project.testOutputDirectory}</testCaseDir>
                 </configuration>
             </plugin>
         </plugins>
